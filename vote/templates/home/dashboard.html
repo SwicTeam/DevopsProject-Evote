@@ -1,0 +1,57 @@
+{% extends 'home/index.html' %}
+{% block content %}
+
+<br>
+
+<div class="row">
+	<div class="col">
+		<div class="col-md">
+			<div class="card text-center text-white  mb-3" id="total-candidats">
+			  	<div class="card-header">
+			  		<h5 class="card-title">Total Candidats</h5>
+			  	</div>
+			  	<div class="card-body">
+			    	<h3 class="card-title">	{{total_candidates}}	</h3>
+			  	</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="col">
+		<div class="col-md">
+			<div class="card text-center text-white  mb-3" id="total-voters">
+			  	<div class="card-header">
+			  		<h5 class="card-title">Total Voters</h5>
+			  	</div>
+			  	<div class="card-body">
+			    	<h3 class="card-title">{{total_voters}}</h3>
+			  	</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="col">
+		<div class="col-md">
+			<div class="card text-center text-white  mb-3" id="voting-progress">
+			  	<div class="card-header">
+			  		<h5 class="card-title">Voting Progress</h5>
+			  	</div>
+			  	<div class="card-body">
+			    	<h3 class="card-title">{{voting_process}}</h3>
+			  	</div>
+			</div>
+		</div>
+	</div>
+</div>
+<br>
+<div class="row">
+	<div class="col-md">
+		
+            <div class="d-grid gap-2 col-6 mx-auto">
+			<a class="btn btn-primary  btn-sm btn-block" href="{% url 'candidates_list' %}">Vote Now</a></div>
+            <br>
+        
+	</div>
+
+</div>
+{% endblock %}
