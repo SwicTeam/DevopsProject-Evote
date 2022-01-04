@@ -1,5 +1,7 @@
 Django
 Gunicorn==20.1.0
+django_filter
+pillow
 Fabric
 argparse
 boto
